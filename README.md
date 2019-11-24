@@ -28,6 +28,21 @@ Ao se obter as medidas de centralidade, pode-se constatar que os nós J, K e S t
 
 Nas figuras de 4 a 9, pode-se observar diversas visualizações da rede tomando como parâmetros as medidas de centralidade degree, closeness e betweenness, e constatar visualmente o que foi discutido no parágrafo anterior.
 
+![Figura 4: Plot da rede tomando degree como parâmetro de raio da circunferência.
+gplot(grede,gmode="grede",displaylabels = TRUE, edge.col="gray",usearrows=FALSE,vertex.cex=degree(grede,gmode="graph",cmode="indegree")/3)](https://github.com/ricardobreis/Network-Analysis-Case-Studies/blob/master/img/One%20Mode%204.png)
 
+![Figura 5: Plot da rede exibindo o valor de degree.
+gplot(grede,gmode="grede",displaylabels = TRUE, edge.col="gray",usearrows=FALSE,label=degree(grede,gmode="graph",cmode="indegree"))](https://github.com/ricardobreis/Network-Analysis-Case-Studies/blob/master/img/One%20Mode%205.png)
 
+![Figura 6: Plot da rede tomando closeness como parâmetro de raio da circunferência.
+gplot(grede,gmode="grede",displaylabels = TRUE, edge.col="gray",usearrows=FALSE,vertex.cex=closeness(grede,gmode="graph")*2)](https://github.com/ricardobreis/Network-Analysis-Case-Studies/blob/master/img/One%20Mode%206.png)
+
+![Figura 7: Plot da rede exibindo o valor de closeness.
+gplot(grede,gmode="grede",displaylabels = TRUE, edge.col="gray",usearrows=FALSE,label=round(closeness(grede,gmode="graph"),digits=2))](https://github.com/ricardobreis/Network-Analysis-Case-Studies/blob/master/img/One%20Mode%207.png)
+
+![Figura 8: Plot da rede tomando betweenness como parâmetro de raio da circunferência.
+gplot(grede,gmode="grede",displaylabels = TRUE, edge.col="gray",usearrows=FALSE,vertex.cex=betweenness(grede,gmode="graph")/3+1)](https://github.com/ricardobreis/Network-Analysis-Case-Studies/blob/master/img/One%20Mode%208.png)
+
+![Figura 9: Plot da rede exibindo o valor de betweenness.
+gplot(grede,gmode="grede",displaylabels = TRUE, edge.col="gray",usearrows=FALSE,label=betweenness(grede,gmode="graph"))](https://github.com/ricardobreis/Network-Analysis-Case-Studies/blob/master/img/One%20Mode%209.png)
 
