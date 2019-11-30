@@ -1,8 +1,6 @@
-## Exemplo de SNA - Social Network Analysis - Rede ONE MODE
+## SNA - Social Network Analysis - Rede ONE MODE
 
 # Extensões para Análise de Redes
-#(devem ser previamente baixadas no CRAN do R)
-
 install.packages("network")
 library(network)
 install.packages("sna")
@@ -53,6 +51,3 @@ gplot3d(grede)
 # Gera redes aleatórias
 grede2 <- rgraph(10)
 grede2
-
-# Interprete as métricas de centralidade de grau, proximidade e intermediação
-# para a rede da variável grede
